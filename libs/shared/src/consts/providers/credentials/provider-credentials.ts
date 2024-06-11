@@ -1137,3 +1137,20 @@ export const whatsAppBusinessConfig: IConfigCredentials[] = [
     required: true,
   },
 ];
+
+export const solutionsInfiniConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API Key',
+    description: 'This is API key for solutionsInfini provider',
+    type: 'text',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.channelId,
+    displayName: 'SMS Channel Id',
+    type: 'string',
+    required: true,
+    description: 'Your SMS Channel Id/Sender Id',
+  },
+];

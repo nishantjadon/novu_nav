@@ -30,6 +30,7 @@ import {
   brevoSmsConfig,
   whatsAppBusinessConfig,
   eazySmsConfig,
+  solutionsInfiniConfig,
 } from '../credentials';
 import { ChatProviderIdEnum, SmsProviderIdEnum } from '../provider.enum';
 
@@ -280,5 +281,13 @@ export const smsProviders: IProviderConfig[] = [
     credentials: eazySmsConfig,
     docReference: 'https://developers.eazy.im/#678805af-be7b-4487-93a4-c1007b7920f5',
     logoFileName: { light: 'eazy-sms.svg', dark: 'eazy-sms.svg' },
+  },
+  {
+    id: SmsProviderIdEnum.SolutionsInfini,
+    displayName: `SolutionsInfini`,
+    channel: ChannelTypeEnum.SMS,
+    credentials: solutionsInfiniConfig,
+    docReference: 'https://alerts.solutionsinfini.com/readme',
+    logoFileName: { light: 'solutions-infini-logo.png', dark: 'solutions-infini-logo.png' },
   },
 ];

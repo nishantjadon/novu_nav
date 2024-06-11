@@ -30,6 +30,7 @@ import {
   RingCentralHandler,
   BrevoSmsHandler,
   EazySmsHandler,
+  SolutionsInfiniHandler,
 } from './handlers';
 
 export class SmsFactory implements ISmsFactory {
@@ -63,6 +64,7 @@ export class SmsFactory implements ISmsFactory {
     new RingCentralHandler(),
     new BrevoSmsHandler(),
     new EazySmsHandler(),
+    new SolutionsInfiniHandler(),
   ];
 
   getHandler(integration: IntegrationEntity) {
